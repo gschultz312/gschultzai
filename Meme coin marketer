@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeCoin Launchpad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MemeCoin Launchpad</h1>
+            <p>Your Gateway to the Latest Meme Coins</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#submit">Submit Your Coin</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About MemeCoin Launchpad</h2>
+            <p>MemeCoin Launchpad is your go-to platform for discovering and promoting the latest meme cryptocurrencies. We make it simple for creators and enthusiasts to connect and explore new opportunities in the crypto space.</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <ul>
+                <li>Easy submission process for new meme coins</li>
+                <li>Affordable listing fees starting at 0.01 Solana</li>
+                <li>Enhanced promotion options up to 2 Solana</li>
+                <li>Discover trending meme coins</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="submit">
+        <div class="container">
+            <h2>Submit Your Meme Coin</h2>
+            <p>Want to feature your meme coin on our platform? Fill out the form below and pay the listing fee to get started.</p>
+            <form id="submit-form" action="/submit" method="POST">
+                <label for="coin-name">Coin Name:</label>
+                <input type="text" id="coin-name" name="coinName" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="listing-tier">Select Listing Tier:</label>
+                <select id="listing-tier" name="listingTier" required>
+                    <option value="0.01">Basic - 0.01 SOL</option>
+                    <option value="0.5">Standard - 0.5 SOL</option>
+                    <option value="2">Premium - 2 SOL</option>
+                </select>
+
+                <label for="wallet-address">Your Solana Wallet Address:</label>
+                <input type="text" id="wallet-address" name="walletAddress" required>
+
+                <button type="submit">Submit Coin</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MemeCoin Launchpad. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
